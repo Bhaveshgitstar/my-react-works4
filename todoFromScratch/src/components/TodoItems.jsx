@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { Todolist } from "../store/todo-list-store";
 import { AiFillDelete } from "react-icons/ai";
 import { IoSave } from "react-icons/io5";
@@ -9,6 +9,13 @@ const TodoItems = ({ todo }) => {
   const [isEditing, setEditing] = useState(false);
   const [todoName, setTodoName] = useState(todo.name);
   const [todoDate, setTodoDate] = useState(todo.date);
+
+
+  useEffect(()=>{
+    fetch('https://dummyjson.com/todos')
+  .then(res => res.json())
+  .then(console.log);},[]);
+
   let todoContent;
   if (isEditing) {
     todoContent = (
