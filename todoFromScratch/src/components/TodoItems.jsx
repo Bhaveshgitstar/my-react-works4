@@ -7,21 +7,9 @@ import { FaEdit } from "react-icons/fa";
 const TodoItems = ({ todo }) => {
   const { deleteTodo } = useContext(Todolist);
   const [isEditing, setEditing] = useState(false);
-  const [todoName, setTodoName] = useState(todo.name);
+  const [todoName, setTodoName] = useState(todo.todo);
   const [todoDate, setTodoDate] = useState(todo.date);
-  const [todoData, setTodoData] = useState();
 
-
-  useEffect(()=>{
-
-    const fetchTodo = async () =>{
-      const res= await fetch('https://dummyjson.com/todos');
-      const todo=await res.json();
-      console.log(todo.todos.length);
-    }
-
-    fetchTodo();
-},[]);
 
   let todoContent;
   if (isEditing) {
@@ -58,7 +46,7 @@ const TodoItems = ({ todo }) => {
   } else {
     todoContent = (
       <>
-        <span className="todo-item">{todo.name}</span>
+        <span className="todo-item">{todo.todo}</span>
         <span className="todo-item">{todo.date}</span>
 
         <button
@@ -84,7 +72,6 @@ const TodoItems = ({ todo }) => {
       >
         <AiFillDelete />
       </button>
-      {todoData}
     </>
   );
 };

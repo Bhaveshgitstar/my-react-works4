@@ -37,7 +37,7 @@ const todoListReducer = (currTodoList, action) => {
 const TodoListProvider = ({ children }) => {
   const [todoList, dispatchTodo] = useReducer(
     todoListReducer,
-    INITIAL_TODO_LIST
+    []
   );
 
   const addTodo = (addTodoItem, addTodoDate) => {

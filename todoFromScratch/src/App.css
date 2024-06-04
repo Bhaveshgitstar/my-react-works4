@@ -2,8 +2,18 @@
   text-align: center;
 }
 
+.welcome-message {
+  margin: 10px 0px;
+}
+
 .app-body {
   background-color: aquamarine;
+}
+
+.loading-spinner {
+  margin: 10% 0;
+  min-width: 50px;
+  min-height: 50px;
 }
 .todo-input {
   display: inline-flex;
@@ -14,7 +24,7 @@
   text-align: center;
   /* display: flex; */
   margin: 10px 4px;
-  min-width: 25vw;
+  min-width: 30vw;
   /* border: ; */
 }
 
@@ -25,7 +35,7 @@
 
 .todo-item {
   border: solid 1px;
-  min-width: 25vw;
+  min-width: 30vw;
   margin: 10px 4px;
 }
 
