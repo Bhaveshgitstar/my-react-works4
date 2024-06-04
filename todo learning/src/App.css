@@ -1,0 +1,29 @@
+h1{
+  font-family: 700;
+  font-size: 45px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+input{
+  width:100%;
+}
+
+.item-cont{
+  text-align: left;
+}
+
+.todo-cont{
+  text-align: left;
+
+}
+
+.todo-btn{
+  min-width: 80px ;
+
+}
+
+.todo-row{
+  margin: 10px 5px;
+
+}

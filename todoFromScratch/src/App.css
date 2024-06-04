@@ -1,0 +1,35 @@
+.app-heading {
+  text-align: center;
+}
+
+.app-body {
+  background-color: aquamarine;
+}
+.todo-input {
+  display: inline-flex;
+  /* display: flex; */
+}
+
+.todocontent {
+  text-align: center;
+  /* display: flex; */
+  margin: 10px 4px;
+  min-width: 400px;
+  /* border: ; */
+}
+
+.addbutton {
+  margin: 10px 4px;
+  min-width: 80px;
+}
+
+.todo-item {
+  border: solid 1px;
+  min-width: 400px;
+  margin: 10px 4px;
+}
+
+.updatebutton {
+  margin: 10px 4px;
+  min-width: 36px;
+}
