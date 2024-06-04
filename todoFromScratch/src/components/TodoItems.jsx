@@ -9,12 +9,19 @@ const TodoItems = ({ todo }) => {
   const [isEditing, setEditing] = useState(false);
   const [todoName, setTodoName] = useState(todo.name);
   const [todoDate, setTodoDate] = useState(todo.date);
+  const [todoData, setTodoData] = useState();
 
 
   useEffect(()=>{
-    fetch('https://dummyjson.com/todos')
-  .then(res => res.json())
-  .then(console.log);},[]);
+
+    const fetchTodo = async () =>{
+      const res= await fetch('https://dummyjson.com/todos');
+      const todo=await res.json();
+      console.log(todo.todos.length);
+    }
+
+    fetchTodo();
+},[]);
 
   let todoContent;
   if (isEditing) {
@@ -77,6 +84,7 @@ const TodoItems = ({ todo }) => {
       >
         <AiFillDelete />
       </button>
+      {todoData}
     </>
   );
 };
