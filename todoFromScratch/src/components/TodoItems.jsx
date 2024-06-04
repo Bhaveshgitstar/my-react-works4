@@ -10,7 +10,6 @@ const TodoItems = ({ todo }) => {
   const [todoName, setTodoName] = useState(todo.todo);
   const [todoDate, setTodoDate] = useState(todo.date);
 
-
   let todoContent;
   if (isEditing) {
     todoContent = (

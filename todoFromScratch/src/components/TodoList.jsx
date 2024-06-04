@@ -6,26 +6,26 @@ import LoadingSpinner from "./LoadingSpinner";
 
 const TodoList = () => {
   const { todoList } = useContext(Todolist);
-  const [fetchTodoList,setFetchTodoList]=useState(todoList);
-  const [isLoading,setIsLoading]=useState(true);
+  const [fetchTodoList, setFetchTodoList] = useState(todoList);
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    const fetchTodo = async () => {
+      const res = await fetch("https://dummyjson.com/todos");
+      const todo = await res.json();
+      setFetchTodoList(todo.todos);
+      setIsLoading(false);
+    };
 
-    useEffect(()=>{
-      const fetchTodo = async () => {
-        const res = await fetch('https://dummyjson.com/todos');
-        const todo= await res.json();
-        setFetchTodoList(todo.todos);
-        setIsLoading(false);
-      };
-    
     fetchTodo();
-    
-  },[])
+  }, []);
 
   return (
     <>
-    {isLoading && <LoadingSpinner></LoadingSpinner>}
-    {!isLoading && fetchTodoList.length === 0 && <WelcomeMessage></WelcomeMessage>}
+      {isLoading && <LoadingSpinner></LoadingSpinner>}
+      {!isLoading && fetchTodoList.length === 0 && (
+        <WelcomeMessage></WelcomeMessage>
+      )}
       {fetchTodoList.map((todo) => (
         <div key={todo.id} className="todo-input">
           <TodoItems todo={todo}></TodoItems>
