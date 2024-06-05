@@ -1,7 +1,7 @@
 {
   "name": "cocktaildb",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.0mongodb+srv://bhasha12:cLU4rWC63vJIWt3o@obedoc.yjscp0h.mongodb.net/",
   "type": "module",
   "scripts": {
     "dev": "vite",
