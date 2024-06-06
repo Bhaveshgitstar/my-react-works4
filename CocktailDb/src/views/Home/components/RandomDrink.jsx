@@ -1,44 +1,15 @@
-import { useEffect, useState } from "react";
-import PopularDrinkElement from "../../../components/Image-Card/PopularDrinkElement";
-import Spinner from "../../../components/Spinner/Spinner";
+import DrinksCard from "../../../components/Drinks-Card/DrinksCard";
+import { useGetData } from "../../../hooks/useGetData";
 
 const RandomDrinks = () => {
-  const [popularDrinkList, setPopularDrinkList] = useState([]);
-  const [isFetching, setIsFetching] = useState(false);
-
-  const getRandomDrinks = (drinks) => {
-    for (let i = drinks.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [drinks[i], drinks[j]] = [drinks[j], drinks[i]];
-    }
-    return drinks.slice(0, 8);
-  };
-
-  useEffect(() => {
-    const fetchPopolarDrinkList = async () => {
-      setIsFetching(true);
-      const res = await fetch("http://localhost:31573/drinks");
-      const drinks = await res.json();
-      setPopularDrinkList(getRandomDrinks(drinks));
-      setIsFetching(false);
-    };
-    fetchPopolarDrinkList();
-  }, []);
+  const [isFetching, popularDrinkList] = useGetData();
 
   return (
-    <>
-      <center>
-        <h3 style={{ marginTop: "1%" }}>Random Drinks</h3>
-        {isFetching && <Spinner></Spinner>}
-        {!isFetching && (
-          <div className="row row-cols-1 row-cols-md-4 g-4 card-component">
-            {popularDrinkList.map((drink) => (
-              <PopularDrinkElement key={drink.idDrink} drink={drink} />
-            ))}
-          </div>
-        )}
-      </center>
-    </>
+    <DrinksCard
+      isFetching={isFetching}
+      title={"Random"}
+      DrinkList={popularDrinkList}
+    ></DrinksCard>
   );
 };
 

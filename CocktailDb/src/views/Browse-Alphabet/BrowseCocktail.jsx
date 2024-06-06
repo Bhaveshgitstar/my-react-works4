@@ -1,28 +1,28 @@
+import { useLocation } from "react-router-dom";
+import api from "../../services/api";
 import { useEffect, useState } from "react";
-import api from "../../../services/api";
-import DrinksCard from "../../../components/Drinks-Card/DrinksCard";
-
-const PopularDrinks = () => {
+import DrinksCard from "../../components/Drinks-Card/DrinksCard";
+const BrowseCocktail = () => {
+  const location = useLocation();
+  const drink = location.state?.char[0];
   const [popularDrinkList, setPopularDrinkList] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
-
   useEffect(() => {
     const getData = async () => {
       setIsFetching(true);
-      const drinks = await api.fetchPopularDrinkList();
-      setPopularDrinkList(drinks);
+      const data = await api.fetchByAlphabet(drink);
+      setPopularDrinkList(data);
       setIsFetching(false);
     };
+
     getData();
   }, []);
-
   return (
     <DrinksCard
       isFetching={isFetching}
-      title={"Popular"}
+      title={"Browse"}
       DrinkList={popularDrinkList}
     ></DrinksCard>
   );
 };
-
-export default PopularDrinks;
+export default BrowseCocktail;
