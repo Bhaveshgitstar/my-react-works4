@@ -1,20 +1,20 @@
 import { useEffect, useState } from "react";
-import PopularDrinkElement from "./PopularDrinkElement";
-import Spinner from "../Spinner";
+import PopularDrinkElement from "../../../components/Image-Card/PopularDrinkElement";
+import Spinner from "../../../components/Spinner/Spinner";
+import api from "../../../services/api";
 
 const PopularDrinks = () => {
   const [popularDrinkList, setPopularDrinkList] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
 
   useEffect(() => {
-    const fetchPopolarDrinkList = async () => {
+    const getData = async () => {
       setIsFetching(true);
-      const res = await fetch("http://localhost:31573/drinks");
-      const drinks = await res.json();
+      const drinks = await api.fetchPopularDrinkList();
       setPopularDrinkList(drinks);
       setIsFetching(false);
     };
-    fetchPopolarDrinkList();
+    getData();
   }, []);
 
   return (

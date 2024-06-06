@@ -1,8 +1,6 @@
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareFacebook, FaSquareXTwitter } from "react-icons/fa6";
-
 import { CgHello } from "react-icons/cg";
-
 import { Link } from "react-router-dom";
 
 const Footer = () => {

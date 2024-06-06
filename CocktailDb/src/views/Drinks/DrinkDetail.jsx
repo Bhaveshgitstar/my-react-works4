@@ -1,9 +1,6 @@
-import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import Spinner from "../Spinner";
 
 const DrinkDetail = () => {
-  const [isFetching, setIsFetching] = useState(false);
   const location = useLocation();
   const drink = location.state?.drink;
   return (

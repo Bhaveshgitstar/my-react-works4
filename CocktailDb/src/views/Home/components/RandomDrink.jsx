@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import PopularDrinkElement from "./PopularDrinkElement";
-import Spinner from "../Spinner";
+import PopularDrinkElement from "../../../components/Image-Card/PopularDrinkElement";
+import Spinner from "../../../components/Spinner/Spinner";
 
 const RandomDrinks = () => {
   const [popularDrinkList, setPopularDrinkList] = useState([]);
@@ -13,10 +13,6 @@ const RandomDrinks = () => {
     }
     return drinks.slice(0, 8);
   };
-  // const sortedDrinks = data.sort(
-  //   (a, b) => new Date(b.dateModified) - new Date(a.dateModified)
-  // );
-  // setPopularDrinkList(sortedDrinks);
 
   useEffect(() => {
     const fetchPopolarDrinkList = async () => {
