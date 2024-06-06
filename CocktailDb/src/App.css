@@ -1,3 +1,27 @@
 .loading-spinner {
   margin: 10% 0;
 }
+
+.footer-container {
+  border: solid 1px white;
+
+  background-color: azure;
+  min-width: 100%;
+  margin-top: 2%;
+}
+
+.navbar2-component {
+  min-width: 100%;
+}
+
+.card-component {
+  margin: 1% 0;
+  max-width: 80%;
+  /* background-color: blanchedalmond; */
+  visibility: visible;
+  padding-bottom: 2.5%;
+}
+
+.single-card {
+  background-color: azure;
+}
