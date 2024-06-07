@@ -4,6 +4,7 @@ const PopularIngredientElement = ({ ingredient }) => {
   return (
     <>
       <Link
+        style={{ textDecoration: "none" }}
         to={`/ingredients/${ingredient.idIngredient}`}
         state={{ ingredient }}
       >

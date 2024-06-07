@@ -29,5 +29,12 @@ const api = {
       (drink) => drink.strDrink.toLowerCase()[0] === char.toLowerCase()
     );
   },
+  fetchForNavBar: async () => {
+    const res1 = await fetch("http://localhost:31573/drinks");
+    const drinks = await res.json();
+    const res2 = await fetch("http://localhost:31574/ingredients");
+    const ingredients = await res.json();
+    return [...drinks, ...ingredients];
+  },
 };
 export default api;

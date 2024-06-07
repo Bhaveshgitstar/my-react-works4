@@ -34,8 +34,12 @@ const BrowseCard = () => {
       <h3>Browse By Starting Alphabet</h3>
 
       {AlphabetArray.map((char) => (
-        <span>
-          <Link to={`/browse/${char[0]}`} state={{ char }}>
+        <span key={char} style={{ fontSize: "16pt" }}>
+          <Link
+            className="BrowseCard"
+            to={`/browse/${char[0]}`}
+            state={{ char }}
+          >
             {char}
           </Link>
         </span>

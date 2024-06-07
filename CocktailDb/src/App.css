@@ -25,3 +25,7 @@
 .single-card {
   background-color: azure;
 }
+
+.BrowseCard {
+  text-decoration: none;
+}

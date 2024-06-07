@@ -1,8 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import api from "../../services/api";
 
 const Navbar2 = () => {
+  const [DrinkList, setDrinkList] = useState([]);
+  const [isFetching, setIsFetching] = useState(false);
+  const [searchItem, setSearchItem] = useState();
   const [isDropdown, setDropdown] = useState(false);
+
+  useEffect(() => {
+    const fetchForNavBar = () => {};
+  }, []);
 
   return (
     <nav
@@ -10,9 +18,9 @@ const Navbar2 = () => {
       aria-label="Ninth navbar example"
     >
       <div className="container-xl">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           CockTailDb
-        </a>
+        </Link>
         <button
           className="navbar-toggler collapsed"
           type="button"

@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 const PopularDrinkElement = ({ drink }) => {
   return (
     <>
-      <Link to={`/drinks/${drink.idDrink}`} state={{ drink }}>
+      <Link
+        style={{ textDecoration: "none" }}
+        to={`/drinks/${drink.idDrink}`}
+        state={{ drink }}
+      >
         <div className="col ">
           <div
             className="card "
