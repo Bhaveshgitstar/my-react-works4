@@ -62,7 +62,8 @@ const api = {
   fetchForSearch: async (req) => {
     const res = await fetch("http://localhost:31573/drinks");
     const drinks = await res.json();
-    return drinks.filter((drink) => drink.strDrink.includes(req));
+    req = req.toLowerCase();
+    return drinks.filter((drink) => drink.strDrink.toLowerCase().includes(req));
   },
 };
 export default api;
