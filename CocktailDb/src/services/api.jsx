@@ -22,6 +22,7 @@ const api = {
       .filter((ingredient) => ingredient.strABV === "40")
       .slice(0, 4);
   },
+
   fetchByAlphabet: async (char) => {
     const res = await fetch("http://localhost:31573/drinks");
     const drinks = await res.json();

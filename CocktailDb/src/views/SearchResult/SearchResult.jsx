@@ -7,7 +7,6 @@ import { useLocation } from "react-router-dom";
 const SearchResult = () => {
   const location = useLocation();
   const drink = location.state?.id;
-
   const [DrinkList, setDrinkList] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
   useEffect(() => {

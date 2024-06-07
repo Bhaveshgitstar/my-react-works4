@@ -11,6 +11,7 @@ import All from "./components/CategoryResult/All.jsx";
 import Cocktail from "./components/CategoryResult/Cocktail.jsx";
 import OrdinaryDrink from "./components/CategoryResult/OrdinaryDrink.jsx";
 import SearchResult from "./views/SearchResult/SearchResult.jsx";
+import IngredientDetails from "./views/Ingredients/Ingredient.jsx";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/search/",
         element: <Home />,
+      },
+      {
+        path: "/ingredients/:id",
+        element: <IngredientDetails />,
       },
     ],
   },

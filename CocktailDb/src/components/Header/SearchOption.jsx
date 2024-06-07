@@ -3,30 +3,19 @@ import { useNavigate } from "react-router-dom";
 
 const SearchOption = () => {
   const searchItem = useRef();
-  const [search, setSearch] = useState();
+  const [searchString, setSearch] = useState("home");
   const navigate = useNavigate();
-  const handleKeyUp = () => {
-    setTimeout();
-  };
-
   useEffect(() => {
     const timerId = setTimeout(() => {
-      navigate(`/search/${search}`, { state: { id: search } });
+      searchString = `/${searchString}`;
+      navigate(`${searchString}`, { state: { id: search } });
     }, 1000);
 
     return () => {
       clearTimeout(timerId);
     };
-  }, [search]);
+  }, [searchString]);
 
-  // const handleEnter = async (e) => {
-  //   if (e.code === "Enter") {
-  //     e.preventDefault();
-  //     const search = searchItem.current.value;
-  //     searchItem.current.value = "";
-  //     navigate(`/search/${search}`, { state: { id: search } });
-  //   }
-  // };
   return (
     <form role="search">
       <input
