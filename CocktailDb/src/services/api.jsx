@@ -31,10 +31,38 @@ const api = {
   },
   fetchForNavBar: async () => {
     const res1 = await fetch("http://localhost:31573/drinks");
+    const drinks = await res1.json();
+    return drinks;
+  },
+  fetchByCategory: async (req) => {
+    const res = await fetch("http://localhost:31573/drinks");
     const drinks = await res.json();
-    const res2 = await fetch("http://localhost:31574/ingredients");
-    const ingredients = await res.json();
-    return [...drinks, ...ingredients];
+    return drinks.filter((drink) => drink.strAlcoholic === req);
+  },
+  fetchAlcoholic: async (req) => {
+    const res = await fetch("http://localhost:31573/drinks");
+    const drinks = await res.json();
+    return drinks.filter((drink) => drink.strAlcoholic === "Alcoholic");
+  },
+  fetchNonAlcoholic: async (req) => {
+    const res = await fetch("http://localhost:31573/drinks");
+    const drinks = await res.json();
+    return drinks.filter((drink) => drink.strAlcoholic === "Non alcoholic");
+  },
+  fetchCocktail: async (req) => {
+    const res = await fetch("http://localhost:31573/drinks");
+    const drinks = await res.json();
+    return drinks.filter((drink) => drink.strCategory !== "Ordinary Drink");
+  },
+  fetchOrdinaryDrink: async (req) => {
+    const res = await fetch("http://localhost:31573/drinks");
+    const drinks = await res.json();
+    return drinks.filter((drink) => drink.strCategory === "Ordinary Drink");
+  },
+  fetchForSearch: async (req) => {
+    const res = await fetch("http://localhost:31573/drinks");
+    const drinks = await res.json();
+    return drinks.filter((drink) => drink.strDrink.includes(req));
   },
 };
 export default api;

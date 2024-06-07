@@ -1,5 +1,7 @@
+import Navbar2 from "../Header/Navbar2";
 import PopularDrinkElement from "../Image-Card/PopularDrinkElement";
 import Spinner from "../Spinner/Spinner";
+import WelcomeMessage from "../WelcomeMessage/WelcomeMessage";
 
 const DrinksCard = ({ isFetching, title, DrinkList }) => {
   return (
@@ -12,6 +14,9 @@ const DrinksCard = ({ isFetching, title, DrinkList }) => {
             <PopularDrinkElement key={drink.idDrink} drink={drink} />
           ))}
         </div>
+      )}
+      {!isFetching && DrinkList.length == 0 && (
+        <WelcomeMessage></WelcomeMessage>
       )}
     </center>
   );

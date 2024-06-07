@@ -29,3 +29,8 @@
 .BrowseCard {
   text-decoration: none;
 }
+
+.welcome-message {
+  margin-top: 2.5%;
+  color: blue;
+}

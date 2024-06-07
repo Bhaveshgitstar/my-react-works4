@@ -1,7 +1,7 @@
 const WelcomeMessage = () => {
   return (
     <>
-      <h3 className="welcome-message">You can enjoy now.</h3>
+      <h1 className="welcome-message">Nothing to show.</h1>
     </>
   );
 };

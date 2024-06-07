@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Spinner from "./components/Spinner/Spinner";
+
 import Footer from "./components/Footer/Footer";
 import { Outlet } from "react-router-dom";
 import Navbar2 from "./components/Header/Navbar2";
