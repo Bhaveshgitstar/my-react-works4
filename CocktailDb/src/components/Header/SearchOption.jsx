@@ -3,18 +3,18 @@ import { useNavigate } from "react-router-dom";
 
 const SearchOption = () => {
   const searchItem = useRef();
-  const [searchString, setSearch] = useState("home");
+  const [search, setSearch] = useState("");
   const navigate = useNavigate();
+
   useEffect(() => {
     const timerId = setTimeout(() => {
-      searchString = `/${searchString}`;
-      navigate(`${searchString}`, { state: { id: search } });
+      navigate(`/search/${search}`, { state: { id: search } });
     }, 1000);
 
     return () => {
       clearTimeout(timerId);
     };
-  }, [searchString]);
+  }, [search]);
 
   return (
     <form role="search">
