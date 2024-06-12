@@ -1,6 +1,10 @@
 import { Children, createContext, useContext, useReducer } from "react";
 
-export const ListCocktail = createContext({});
+export const ListCocktail = createContext({
+  drinksList: [],
+  fetchDrinkList: () => {},
+  fetchIngredientList: () => {},
+});
 
 const ListCocktailReducer = (currCocktailDb, action) => {};
 

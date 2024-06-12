@@ -1,3 +1,3 @@
 const DrinkUtils = {
-  fetchDrinkIngredient: async () => {},
+  convertToArrayDrinkIngredient: async () => {},
 };

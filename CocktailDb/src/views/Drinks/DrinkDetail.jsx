@@ -68,30 +68,30 @@ const DrinkDetail = () => {
                 </span>
               ))}
             </div>
+            <div>
+              <FaLessThan
+                style={{ width: "8rem", height: "7rem", marginLeft: " 75px" }}
+                onClick={() => {
+                  if (currIndex + 1 === ingredientList.length) setCurrIndex(0);
+                  else setCurrIndex(currIndex + 1);
+                }}
+              />
+
+              <FaGreaterThan
+                style={{ width: "8rem", height: "7rem" }}
+                onClick={() => {
+                  if (currIndex - 1 === -1)
+                    setCurrIndex(Math.max(0, ingredientList.length - 1));
+                  else setCurrIndex(currIndex - 1);
+                }}
+              />
+            </div>
           </div>
         )}
         <div className="row row-cols-1 row-cols-md-3 g-3 card-component">
           {DrinkIngredient.map((ingredient) => (
             <DrinkIngredients ingredient={ingredient} />
           ))}
-        </div>
-        <div>
-          <FaLessThan
-            style={{ width: "8rem", height: "7rem", marginLeft: " 75px" }}
-            onClick={() => {
-              if (currIndex + 1 === ingredientList.length) setCurrIndex(0);
-              else setCurrIndex(currIndex + 1);
-            }}
-          />
-
-          <FaGreaterThan
-            style={{ width: "8rem", height: "7rem" }}
-            onClick={() => {
-              if (currIndex - 1 === -1)
-                setCurrIndex(Math.max(0, ingredientList.length - 1));
-              else setCurrIndex(currIndex - 1);
-            }}
-          />
         </div>
       </div>
     </>
