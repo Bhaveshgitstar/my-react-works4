@@ -2,7 +2,9 @@ import { useLocation } from "react-router-dom";
 import { FaLessThan, FaGreaterThan } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import api from "../../services/api";
-import PopularIngredientElement from "../../components/Image-Card/PopularIngredientElement";
+import { Link } from "react-router-dom";
+
+import DrinkIngredients from "../../components/Image-Card/DrinkIngredients";
 
 const DrinkDetail = () => {
   const location = useLocation();
@@ -11,41 +13,24 @@ const DrinkDetail = () => {
   const [currIngredient, setCurrIngredient] = useState(ingredientList[0]);
   const tags =
     currIngredient.strTags !== null ? currIngredient.strTags.split(",") : [];
-  const DrinkIngredients = [
-    currIngredient.strIngredient1,
-    currIngredient.strIngredient2,
-    currIngredient.strIngredient3,
-    currIngredient.strIngredient4,
-    currIngredient.strIngredient5,
-    currIngredient.strIngredient6,
-    currIngredient.strIngredient7,
-    currIngredient.strIngredient8,
-    currIngredient.strIngredient9,
-    currIngredient.strIngredient10,
-    currIngredient.strIngredient11,
-    currIngredient.strIngredient12,
-    currIngredient.strIngredient13,
-    currIngredient.strIngredient14,
-    currIngredient.strIngredient15,
+  let DrinkIngredient = [
+    [currIngredient.strIngredient1, currIngredient.strMeasure1],
+    [currIngredient.strIngredient2, currIngredient.strMeasure2],
+    [currIngredient.strIngredient3, currIngredient.strMeasure3],
+    [currIngredient.strIngredient4, currIngredient.strMeasure4],
+    [currIngredient.strIngredient5, currIngredient.strMeasure5],
+    [currIngredient.strIngredient6, currIngredient.strMeasure6],
+    [currIngredient.strIngredient7, currIngredient.strMeasure7],
+    [currIngredient.strIngredient8, currIngredient.strMeasure8],
+    [currIngredient.strIngredient9, currIngredient.strMeasure9],
+    [currIngredient.strIngredient10, currIngredient.strMeasure10],
+    [currIngredient.strIngredient11, currIngredient.strMeasure11],
+    [currIngredient.strIngredient12, currIngredient.strMeasure12],
+    [currIngredient.strIngredient13, currIngredient.strMeasure13],
+    [currIngredient.strIngredient14, currIngredient.strMeasure14],
+    [currIngredient.strIngredient15, currIngredient.strMeasure15],
   ];
 
-  const DrinkMeasures = [
-    currIngredient.strMeasure1,
-    currIngredient.strMeasure2,
-    currIngredient.strMeasure3,
-    currIngredient.strIngredient4,
-    currIngredient.strIngredient5,
-    currIngredient.strIngredient6,
-    currIngredient.strIngredient7,
-    currIngredient.strIngredient8,
-    currIngredient.strIngredient9,
-    currIngredient.strIngredient10,
-    currIngredient.strIngredient11,
-    currIngredient.strIngredient12,
-    currIngredient.strIngredient13,
-    currIngredient.strIngredient14,
-    currIngredient.strIngredient15,
-  ];
   const [currIndex, setCurrIndex] = useState(0);
   useEffect(() => {
     const getData = async () => {
@@ -60,46 +45,55 @@ const DrinkDetail = () => {
   }, [currIndex]);
   return (
     <>
-      {drink && (
-        <div rowspan="4" className="card " style={{ width: "30rem" }}>
-          <img
-            src={currIngredient.strDrinkThumb}
-            className="card-img-top"
-            alt="..."
-            style={{ height: "25rem", width: "30rem" }}
-          />
-          <div className="card-body">
-            <h5 className="card-title">{currIngredient.strDrink}</h5>
-            <p className="card-text">{currIngredient.strInstructions}</p>
-            {tags.map((tag) => (
-              <span key={tag} className="btn btn-success tag">
-                {tag}
-              </span>
-            ))}
+      <div
+        className="row row-cols-1 row-cols-md-2 g-1 card-component"
+        style={{ minWidth: "100%" }}
+      >
+        {drink && (
+          <div className="card col" style={{ width: "40rem" }}>
+            <Link to={currIngredient.strDrinkThumb}>
+              <img
+                src={currIngredient.strDrinkThumb}
+                className="card-img-top"
+                alt="..."
+                style={{ height: "30rem", width: "39rem" }}
+              />
+            </Link>
+            <div className="card-body">
+              <h5 className="card-title">{currIngredient.strDrink}</h5>
+              <p className="card-text">{currIngredient.strInstructions}</p>
+              {tags.map((tag) => (
+                <span key={tag} className="btn btn-success tag">
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
+        )}
+        <div className="row row-cols-1 row-cols-md-3 g-3 card-component">
+          {DrinkIngredient.map((ingredient) => (
+            <DrinkIngredients ingredient={ingredient} />
+          ))}
         </div>
-      )}
-      {/* <div className="row row-cols-1 row-cols-md-4 g-4 card-component">
-        {DrinkIngredients.map((drink) => (
-          <PopularIngredientElement key={drink} ingredient={drink} />
-        ))}
-      </div> */}
-      <FaLessThan
-        style={{ width: "10rem", height: "7rem", marginLeft: " 50px" }}
-        onClick={() => {
-          if (currIndex + 1 === ingredientList.length) setCurrIndex(0);
-          else setCurrIndex(currIndex + 1);
-        }}
-      />
+        <div>
+          <FaLessThan
+            style={{ width: "8rem", height: "7rem", marginLeft: " 75px" }}
+            onClick={() => {
+              if (currIndex + 1 === ingredientList.length) setCurrIndex(0);
+              else setCurrIndex(currIndex + 1);
+            }}
+          />
 
-      <FaGreaterThan
-        style={{ width: "10rem", height: "7rem" }}
-        onClick={() => {
-          if (currIndex - 1 === -1)
-            setCurrIndex(Math.max(0, ingredientList.length - 1));
-          else setCurrIndex(currIndex - 1);
-        }}
-      />
+          <FaGreaterThan
+            style={{ width: "8rem", height: "7rem" }}
+            onClick={() => {
+              if (currIndex - 1 === -1)
+                setCurrIndex(Math.max(0, ingredientList.length - 1));
+              else setCurrIndex(currIndex - 1);
+            }}
+          />
+        </div>
+      </div>
     </>
   );
 };
