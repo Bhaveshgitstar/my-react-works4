@@ -18,7 +18,7 @@ const BrowseCocktail = () => {
     };
 
     getData();
-  }, []);
+  }, [location]);
 
   return (
     <DrinksCard

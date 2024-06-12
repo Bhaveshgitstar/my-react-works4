@@ -66,5 +66,19 @@ const api = {
     req = req.toLowerCase();
     return drinks.filter((drink) => drink.strDrink.toLowerCase().includes(req));
   },
+  fetchAllIngredients: async (drink) => {
+    const res = await fetch("http://localhost:31574/ingredients");
+    const ingredients = await res.json();
+    return ingredients.filter(
+      (ingredient) => ingredient.strIngredient !== drink.strIngredient
+    );
+  },
+  fetchAllDrinks: async (drink) => {
+    const res = await fetch("http://localhost:31573/drinks");
+    const ingredients = await res.json();
+    return ingredients.filter(
+      (ingredient) => ingredient.strDrink !== drink.strDrink
+    );
+  },
 };
 export default api;

@@ -1,0 +1,3 @@
+const DrinkUtils = {
+  fetchDrinkIngredient: async () => {},
+};
