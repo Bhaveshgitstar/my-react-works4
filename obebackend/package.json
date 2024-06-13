@@ -1,0 +1,25 @@
+{
+  "name": "obebackend",
+  "version": "1.0.0",
+  "description": "Finally building its structured backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhaveshgitstar/my-react-works4.git"
+  },
+  "author": "BS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bhaveshgitstar/my-react-works4/issues"
+  },
+  "homepage": "https://github.com/Bhaveshgitstar/my-react-works4#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "router": "^1.3.8"
+  }
+}
