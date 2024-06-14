@@ -120,6 +120,8 @@
   cursor: pointer;
   text-decoration: underline;
   color: #fff;
+  height: 5px;
+  width: 5px;
 }
 
 /* Show the user info popup on button hover */
@@ -380,5 +382,12 @@ form .form-group {
 
   .social-media-wrap {
     flex-direction: column;
+  }
+
+  .footer {
+    margin-top: 100vh;
+  }
+  .footer-container {
+    margin-top: 100vh;
   }
 }

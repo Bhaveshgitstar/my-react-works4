@@ -238,4 +238,13 @@ form .form_group {
   .social_media_wrap {
     flex-direction: column;
   }
+
+  .footer {
+    top: 100vh;
+    position: relative;
+  }
+  .footer_container {
+    top: 100vh;
+    position: relative;
+  }
 }

@@ -1,0 +1,917 @@
+{
+  "folder": {
+    "id": "83",
+    "name": "Kaféer",
+    "headline": "",
+    "summary": "",
+    "body": "",
+    "url": "https://app.barseltid.no/kafeer/",
+    "image": "",
+    "button_text_1": "Kart og rute",
+    "button_text_2": "Del kaf&eacute;",
+    "button_text_3": "Se nettside"
+  },
+  "folders": [],
+  "cafes": [
+    {
+      "id": "1020",
+      "name": "Anne på landet",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Barnestol",
+      "latitude": 59.83437,
+      "longitude": 10.774858,
+      "distance": 2.992003685065033
+    },
+    {
+      "id": "1152",
+      "name": "Åpent Bakeri - Holtet",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol,Uteservering",
+      "latitude": 59.881906,
+      "longitude": 10.78437,
+      "distance": 8.211425329860386
+    },
+    {
+      "id": "459",
+      "name": "Evita espressobar Sørenga",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.90458,
+      "longitude": 10.758184,
+      "distance": 10.84452519069135
+    },
+    {
+      "id": "150",
+      "name": "Stockfleths Gamlebyen",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.908425,
+      "longitude": 10.768289,
+      "distance": 11.203685440626794
+    },
+    {
+      "id": "1335",
+      "name": "Åpent Bakeri Barcode",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.908226,
+      "longitude": 10.758859,
+      "distance": 11.240693814765704
+    },
+    {
+      "id": "878",
+      "name": "Espresso House - Barcode",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn",
+      "latitude": 59.908797,
+      "longitude": 10.757822,
+      "distance": 11.311535000980385
+    },
+    {
+      "id": "620",
+      "name": "Kafé Saba",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn",
+      "latitude": 59.910433,
+      "longitude": 10.766952,
+      "distance": 11.432823985137842
+    },
+    {
+      "id": "825",
+      "name": "Vingen",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.906808,
+      "longitude": 10.721554,
+      "distance": 11.555914760323452
+    },
+    {
+      "id": "149",
+      "name": "Javelin",
+      "summary": "Koselig på Kampen",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol",
+      "latitude": 59.912032,
+      "longitude": 10.781159,
+      "distance": 11.563840285654429
+    },
+    {
+      "id": "1086",
+      "name": "Opland Burger & Steak",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.910789,
+      "longitude": 10.751502,
+      "distance": 11.58446710608417
+    },
+    {
+      "id": "692",
+      "name": "Celsius mat & vinhus",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol,Uteservering",
+      "latitude": 59.910139,
+      "longitude": 10.740319,
+      "distance": 11.634242146230626
+    },
+    {
+      "id": "140",
+      "name": "Wayne's Coffee Tjuvholmen",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.908264,
+      "longitude": 10.723669,
+      "distance": 11.674021144666058
+    },
+    {
+      "id": "698",
+      "name": "Asylet",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.912876,
+      "longitude": 10.762439,
+      "distance": 11.728985343281089
+    },
+    {
+      "id": "723",
+      "name": "Sentralen",
+      "summary": "God plass og fine lokaler",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.910993,
+      "longitude": 10.739475,
+      "distance": 11.737249239215693
+    },
+    {
+      "id": "1289",
+      "name": "Kafé Frodig",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Lekerom,Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.913098,
+      "longitude": 10.763493,
+      "distance": 11.747046255699422
+    },
+    {
+      "id": "694",
+      "name": "Café Sorgenfri",
+      "summary": "Handikaptoalett. Spill og tegnesaker til barna.",
+      "is_popular": "",
+      "properties": "Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.909309,
+      "longitude": 10.724861,
+      "distance": 11.765439495878503
+    },
+    {
+      "id": "147",
+      "name": "Postkontoret",
+      "summary": "Hipt og barnevennlig på Tøyen",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Uteservering",
+      "latitude": 59.914126,
+      "longitude": 10.775047,
+      "distance": 11.809502633850368
+    },
+    {
+      "id": "738",
+      "name": "Steen og strøm",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Lekerom,Stellebord,Plass til vogn",
+      "latitude": 59.912047,
+      "longitude": 10.743028,
+      "distance": 11.809568251236863
+    },
+    {
+      "id": "690",
+      "name": "Albert Bistro",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.910174,
+      "longitude": 10.727817,
+      "distance": 11.810963201387205
+    },
+    {
+      "id": "1334",
+      "name": "Skatten Oslo",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn",
+      "latitude": 59.914418,
+      "longitude": 10.775016,
+      "distance": 11.842015926065903
+    },
+    {
+      "id": "1035",
+      "name": "Anatolia",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.914806,
+      "longitude": 10.776315,
+      "distance": 11.881545863432056
+    },
+    {
+      "id": "1099",
+      "name": "Brygg",
+      "summary": "Øl på kvelden, Kaffe på dagen",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Uteservering",
+      "latitude": 59.913258,
+      "longitude": 10.748654,
+      "distance": 11.882165519752142
+    },
+    {
+      "id": "621",
+      "name": "Aker Brygge-senteret",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord",
+      "latitude": 59.910822,
+      "longitude": 10.725603,
+      "distance": 11.914679927885347
+    },
+    {
+      "id": "154",
+      "name": "Hjemme hos svigers",
+      "summary": "Vinner på Bygdøy",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol",
+      "latitude": 59.903428,
+      "longitude": 10.688031,
+      "distance": 11.934135609205786
+    },
+    {
+      "id": "958",
+      "name": "Safe as Milk",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.915615,
+      "longitude": 10.788804,
+      "distance": 11.95990776282177
+    },
+    {
+      "id": "708",
+      "name": "Eger Spiseri & Vinbar",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.913458,
+      "longitude": 10.742577,
+      "distance": 11.968288870476647
+    },
+    {
+      "id": "696",
+      "name": "Café Sør",
+      "summary": "Plass til vogn, men litt trangt",
+      "is_popular": "",
+      "properties": "Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.914121,
+      "longitude": 10.74849,
+      "distance": 11.978234214508358
+    },
+    {
+      "id": "1339",
+      "name": "Barselsalongen - Tukthuset kafè",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Lekerom,Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.915651,
+      "longitude": 10.753113,
+      "distance": 12.103811098742131
+    },
+    {
+      "id": "143",
+      "name": "Espresso House Nationaltheatret",
+      "summary": "Deilige lenestoler og plass til vogn inne",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.913912,
+      "longitude": 10.732994,
+      "distance": 12.137187100329772
+    },
+    {
+      "id": "1031",
+      "name": "Paleet",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.914552,
+      "longitude": 10.737618,
+      "distance": 12.146086331514793
+    },
+    {
+      "id": "1068",
+      "name": "Starbucks Torggata",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn",
+      "latitude": 59.916175,
+      "longitude": 10.752123,
+      "distance": 12.169887366685895
+    },
+    {
+      "id": "894",
+      "name": "Boulangerie M – Ditt franske bakeri",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.917846,
+      "longitude": 10.787653,
+      "distance": 12.207324863025482
+    },
+    {
+      "id": "237",
+      "name": "Peloton",
+      "summary": "Hipt og babyvennlig",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn",
+      "latitude": 59.917375,
+      "longitude": 10.753756,
+      "distance": 12.287973783433696
+    },
+    {
+      "id": "710",
+      "name": "Cafe Amsterdam",
+      "summary": "Har tegnesaker og Lego Duplo",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.916244,
+      "longitude": 10.738908,
+      "distance": 12.313939644626982
+    },
+    {
+      "id": "847",
+      "name": "Lille Oslo",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.918581,
+      "longitude": 10.761018,
+      "distance": 12.368209214541658
+    },
+    {
+      "id": "707",
+      "name": "Pascal Henrik Ibsens gate",
+      "summary": "Mulighet for bleieskift på dametoalettet",
+      "is_popular": "",
+      "properties": "Plass til vogn,Barnestol",
+      "latitude": 59.915161,
+      "longitude": 10.72576,
+      "distance": 12.37565139484691
+    },
+    {
+      "id": "1315",
+      "name": "Vega Scene",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Lekerom,Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.9189,
+      "longitude": 10.752393,
+      "distance": 12.4669717156915
+    },
+    {
+      "id": "145",
+      "name": "Botanisk Hage",
+      "summary": "Veldig barnevennlig kafé - er en sikker vinner. ",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol,Uteservering",
+      "latitude": 59.920137,
+      "longitude": 10.770986,
+      "distance": 12.490253704355608
+    },
+    {
+      "id": "697",
+      "name": "Café Europa",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.917943,
+      "longitude": 10.734893,
+      "distance": 12.547679674075868
+    },
+    {
+      "id": "124",
+      "name": "Chillout",
+      "summary": "Deilige ammestoler",
+      "is_popular": "",
+      "properties": "",
+      "latitude": 59.920397,
+      "longitude": 10.757252,
+      "distance": 12.593994553205167
+    },
+    {
+      "id": "1272",
+      "name": "Café Storm",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Plass til vogn",
+      "latitude": 59.918985,
+      "longitude": 10.735508,
+      "distance": 12.65280418019411
+    },
+    {
+      "id": "106",
+      "name": "Espresso House Løkka",
+      "summary": "Ta med vogna inn på Løkka :)",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.9211434,
+      "longitude": 10.7576042,
+      "distance": 12.673825590622265
+    },
+    {
+      "id": "858",
+      "name": "Dansens Hus",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn",
+      "latitude": 59.921649,
+      "longitude": 10.752271,
+      "distance": 12.770208570024757
+    },
+    {
+      "id": "139",
+      "name": "Espresso House Piletredet",
+      "summary": "Deilige lenestoler, men ikke plass til vogn inne.",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol",
+      "latitude": 59.920065,
+      "longitude": 10.734925,
+      "distance": 12.777114098059897
+    },
+    {
+      "id": "101",
+      "name": "Mathallen",
+      "summary": "Enkelt å ta med baby og bra utvalg",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.9226353,
+      "longitude": 10.7519138,
+      "distance": 12.881613916060287
+    },
+    {
+      "id": "136",
+      "name": "Litteraturhuset",
+      "summary": "Arrangementer for barn og lekerom",
+      "is_popular": "",
+      "properties": "Lekerom,Barnestol,Uteservering",
+      "latitude": 59.920278,
+      "longitude": 10.728557,
+      "distance": 12.884183166879309
+    },
+    {
+      "id": "137",
+      "name": "Espresso House Parkveien",
+      "summary": "Veldig babyvennlig!",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.920533,
+      "longitude": 10.72754,
+      "distance": 12.925879442087512
+    },
+    {
+      "id": "974",
+      "name": "Samson Gimle",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Uteservering",
+      "latitude": 59.917825,
+      "longitude": 10.708884,
+      "distance": 12.94342004433627
+    },
+    {
+      "id": "128",
+      "name": "Fru Hagen",
+      "summary": "Ikke stellebord, men deilige sofaer.",
+      "is_popular": "",
+      "properties": "Uteservering",
+      "latitude": 59.923688,
+      "longitude": 10.759252,
+      "distance": 12.94359406864148
+    },
+    {
+      "id": "127",
+      "name": "Godt brød Løkka",
+      "summary": "Barnevennlig og åpent tidlig!",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.923988,
+      "longitude": 10.759032,
+      "distance": 12.978150113825938
+    },
+    {
+      "id": "241",
+      "name": "Vespa & Humla",
+      "summary": "Kafe/restaurant i ekte Jan Vardøen stil",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol,Uteservering",
+      "latitude": 59.92474,
+      "longitude": 10.76284,
+      "distance": 13.038324805917249
+    },
+    {
+      "id": "1288",
+      "name": "Porten på Hasle",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.925378,
+      "longitude": 10.792188,
+      "distance": 13.048929399280327
+    },
+    {
+      "id": "104",
+      "name": "Cocoa",
+      "summary": "Kakao, gode sofaer og kan kjøpe i luke mens du triller. ",
+      "is_popular": "",
+      "properties": "",
+      "latitude": 59.9261042,
+      "longitude": 10.7611384,
+      "distance": 13.198947575945994
+    },
+    {
+      "id": "595",
+      "name": "Pipa (Gmle Kafe Hasle)",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Plass til vogn,Uteservering",
+      "latitude": 59.926971,
+      "longitude": 10.797943,
+      "distance": 13.23815224713848
+    },
+    {
+      "id": "771",
+      "name": "W.B. Samson Grunerløkka",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.926832,
+      "longitude": 10.759147,
+      "distance": 13.291539674528616
+    },
+    {
+      "id": "1337",
+      "name": "Porten på Hasle",
+      "summary": "",
+      "is_popular": "",
+      "properties": "",
+      "latitude": 59.927642,
+      "longitude": 10.792493,
+      "distance": 13.301024658341422
+    },
+    {
+      "id": "105",
+      "name": "Liebling",
+      "summary": "Retro og barnevennlig på Løkka",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol,Uteservering",
+      "latitude": 59.927253,
+      "longitude": 10.756926,
+      "distance": 13.35259743834
+    },
+    {
+      "id": "1038",
+      "name": "KaffeLykke",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol,Uteservering",
+      "latitude": 59.928335,
+      "longitude": 10.76878,
+      "distance": 13.40815206792412
+    },
+    {
+      "id": "153",
+      "name": "Colonel Mustard",
+      "summary": "Veldig barnevennlig restaurant og personal :)",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.92771,
+      "longitude": 10.751784,
+      "distance": 13.440913643850356
+    },
+    {
+      "id": "920",
+      "name": "Baker Hansen - Løren",
+      "summary": "God plass til barnevogner både inne og ute.",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.929218,
+      "longitude": 10.795374,
+      "distance": 13.481417357297788
+    },
+    {
+      "id": "773",
+      "name": "Ringen Kino kafé",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn",
+      "latitude": 59.928675,
+      "longitude": 10.76073,
+      "distance": 13.485599571713998
+    },
+    {
+      "id": "135",
+      "name": "Espresso House Majorstua",
+      "summary": "Plass til mange vogner og stellebord",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.922324,
+      "longitude": 10.7044,
+      "distance": 13.498542262424959
+    },
+    {
+      "id": "1250",
+      "name": "Åpent bakeri Tranen",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.928112,
+      "longitude": 10.749171,
+      "distance": 13.506639139163127
+    },
+    {
+      "id": "966",
+      "name": "Brødbakerne Bislett",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.926919,
+      "longitude": 10.728702,
+      "distance": 13.598542421902664
+    },
+    {
+      "id": "238",
+      "name": "Oslo Bymuseum",
+      "summary": "Kafe i naturlige omgivelser i Frognerparken",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol,Uteservering",
+      "latitude": 59.923948,
+      "longitude": 10.703567,
+      "distance": 13.684179457671965
+    },
+    {
+      "id": "701",
+      "name": "Kafé Vigeland",
+      "summary": "Tar gjerne imot barseltreff",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.923948,
+      "longitude": 10.703567,
+      "distance": 13.684179457671965
+    },
+    {
+      "id": "699",
+      "name": "L'ardoise",
+      "summary": "Fransk restaurant og konditori",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.929117,
+      "longitude": 10.73326,
+      "distance": 13.779477245116452
+    },
+    {
+      "id": "902",
+      "name": "Baker Hansen Sjølyst",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.920481,
+      "longitude": 10.682143,
+      "distance": 13.781232586114477
+    },
+    {
+      "id": "155",
+      "name": "Brødbakerne Skøyen",
+      "summary": "Stor sitteplass ute og inne.",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol,Uteservering",
+      "latitude": 59.921443,
+      "longitude": 10.679654,
+      "distance": 13.936954957626313
+    },
+    {
+      "id": "901",
+      "name": "Pust",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.930457,
+      "longitude": 10.715415,
+      "distance": 14.169439790284661
+    },
+    {
+      "id": "781",
+      "name": "Skaperverket Sagene",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.93517,
+      "longitude": 10.75194,
+      "distance": 14.261219995923037
+    },
+    {
+      "id": "700",
+      "name": "Sagene Lunsjbar",
+      "summary": "Uformell og tradisjonsrik",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol,Uteservering",
+      "latitude": 59.937538,
+      "longitude": 10.75651,
+      "distance": 14.49091941456611
+    },
+    {
+      "id": "1072",
+      "name": "Kaffebønnen",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.929176,
+      "longitude": 10.687622,
+      "distance": 14.545203014570733
+    },
+    {
+      "id": "97",
+      "name": "Nazar cafe",
+      "summary": "Barnevennlig på Sagene",
+      "is_popular": "",
+      "properties": "Lekerom,Stellebord,Barnestol",
+      "latitude": 59.9382505,
+      "longitude": 10.7528005,
+      "distance": 14.594535122620076
+    },
+    {
+      "id": "765",
+      "name": " Norð bjølsen",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Barnestol",
+      "latitude": 59.939943,
+      "longitude": 10.758773,
+      "distance": 14.743018885836475
+    },
+    {
+      "id": "98",
+      "name": "Mat & Mer",
+      "summary": "Deilige sofaer å amme i",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.9399894,
+      "longitude": 10.7589205,
+      "distance": 14.747301632399264
+    },
+    {
+      "id": "618",
+      "name": "Kaffe & Brød",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.941655,
+      "longitude": 10.795732,
+      "distance": 14.864062092855347
+    },
+    {
+      "id": "1039",
+      "name": "Holgerlyst Café",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.924658,
+      "longitude": 10.654676,
+      "distance": 14.895899967175323
+    },
+    {
+      "id": "1058",
+      "name": "Kafe Tandem",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Lekerom,Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.943218,
+      "longitude": 10.773777,
+      "distance": 15.043824933544988
+    },
+    {
+      "id": "903",
+      "name": "Kaffehagen",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Plass til vogn,Barnestol",
+      "latitude": 59.937002,
+      "longitude": 10.683509,
+      "distance": 15.437791330926029
+    },
+    {
+      "id": "1087",
+      "name": "Jordbærpikene Storo",
+      "summary": "3. etasje på senteret",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.947113,
+      "longitude": 10.77499,
+      "distance": 15.4736089971728
+    },
+    {
+      "id": "623",
+      "name": "Storo senter",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.947189,
+      "longitude": 10.774959,
+      "distance": 15.482121925057541
+    },
+    {
+      "id": "913",
+      "name": "Drabanten - Veitvet senter",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Lekerom,Stellebord,Barnestol,Uteservering",
+      "latitude": 59.944354,
+      "longitude": 10.847902,
+      "distance": 15.541968596724253
+    },
+    {
+      "id": "1285",
+      "name": "Drabanten kafé på Veitvetsenteret",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Lekerom,Plass til vogn,Barnestol",
+      "latitude": 59.94437,
+      "longitude": 10.84783,
+      "distance": 15.542812056411192
+    },
+    {
+      "id": "99",
+      "name": "Godt Brød Nydalen",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn",
+      "latitude": 59.948612,
+      "longitude": 10.766726,
+      "distance": 15.665193816008603
+    },
+    {
+      "id": "980",
+      "name": "Stop & Go",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.95372,
+      "longitude": 10.8736,
+      "distance": 16.915753056641933
+    },
+    {
+      "id": "760",
+      "name": "Kaffebrenneriet Røa",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.947567,
+      "longitude": 10.645309,
+      "distance": 17.387498801774996
+    },
+    {
+      "id": "912",
+      "name": "Kafé Steinbra",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol,Uteservering",
+      "latitude": 59.958635,
+      "longitude": 10.882401,
+      "distance": 17.583376811094443
+    },
+    {
+      "id": "702",
+      "name": "Tekno kafé",
+      "summary": "Teknisk Museum",
+      "is_popular": "",
+      "properties": "Stellebord,Plass til vogn,Barnestol",
+      "latitude": 59.966396,
+      "longitude": 10.782716,
+      "distance": 17.60627653222854
+    },
+    {
+      "id": "704",
+      "name": "Café Grevinnen",
+      "summary": "",
+      "is_popular": "",
+      "properties": "Lekerom,Stellebord,Barnestol,Uteservering",
+      "latitude": 59.992267,
+      "longitude": 10.625024,
+      "distance": 22.36460167764662
+    }
+  ]
+}

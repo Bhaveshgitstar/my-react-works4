@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+import { FaRegUserCircle } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className={styles.navigation_strip}>
@@ -9,7 +10,17 @@ const Navbar = () => {
       <div className="contact-us-container">
         Welcome<h4 id="username">User Name</h4>
       </div>
-      <span className="user-info-button">User Info</span>
+      <span className="user-info-button">
+        <FaRegUserCircle
+          className="IconUserInfo"
+          style={{
+            height: "30",
+            width: "30px",
+            position: "relative",
+            right: "8vw",
+          }}
+        />
+      </span>
 
       <div className="user-info-popup">
         <h4 id="username1">User Name</h4>
