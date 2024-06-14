@@ -259,6 +259,9 @@ body.dark {
 }
 
 @media (max-width: 768px) {
+  body {
+    font-size: small;
+  }
   .sidebar.close {
     padding: 3rem 0;
     width: 4rem;
