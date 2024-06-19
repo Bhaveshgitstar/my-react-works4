@@ -4,7 +4,7 @@ const LoginPage = () => {
     <>
       <div class="navigation-strip">
         <h2>
-          &nbsp;&nbsp;OBE Documentation Platform{" "}
+          &nbsp;&nbsp;OBE Documentation Platform
           <a id="aboutus" class="home-button">
             About us
           </a>
@@ -13,7 +13,7 @@ const LoginPage = () => {
       </div>
 
       <div className="row row-cols-1 row-cols-md-2 g-2 card-component">
-        <div className="col">
+        <div className="col desktop">
           <div class="row row-cols-1 row-cols-md-2 g-2 card-component">
             <div className="left-container col">
               <h3 id="h2">Latest News</h3>
@@ -72,7 +72,7 @@ const LoginPage = () => {
           </div>
         </div>
 
-        <div class="form-container col">
+        <div class="col">
           <form action="/loginextra" method="POST">
             <div class="form-group ">
               <table>
@@ -184,10 +184,66 @@ const LoginPage = () => {
               &nbsp;
             </div>
           </form>
-          <div class="contact-us-container">
-            <div id="contact-us-line">Contact Us</div>
+        </div>
+      </div>
+      <div className="col mobile">
+        <div class="row row-cols-1 row-cols-md-2 g-2 card-component">
+          <div className="left-container col">
+            <h3 id="h2">Latest News</h3>
+            <li type="none" id="banner">
+              "This is to noted that a new app is going to be available soon to
+              make your life more easier"
+            </li>
+            <li type="none" id="banner">
+              "This is to noted that a new app is going to be available soon to
+              make your life more easier"
+            </li>
+          </div>
+
+          <div class="left-container col">
+            <h3 id="h2">Latest Circulars</h3>
+            <li type="none" id="banner">
+              "Attainment correct info"
+            </li>
+            <li type="none" id="banner">
+              "This is to noted that a new app is going to be available soon to
+              make your life more easier"
+            </li>
           </div>
         </div>
+
+        <div class="about-container col">
+          <table>
+            <tr>
+              <td>
+                <p id="aboutgap"></p>
+              </td>
+              <td>
+                <p id="about">About Admin</p>
+                <div class="about-info">Additional information about Admin</div>
+              </td>
+
+              <td>
+                <p id="about">About Teacher</p>
+                <div class="about-info">
+                  Additional information about Coordinator
+                </div>
+              </td>
+              <td>
+                <p id="about">About Coordinator</p>
+                <div class="about-info">
+                  Additional information about Teacher
+                </div>
+              </td>
+              <td>
+                <p id="aboutgap"></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="contact-us-container">
+        <div id="contact-us-line">Contact Us</div>
       </div>
 
       <div class="navigation-strip2">
