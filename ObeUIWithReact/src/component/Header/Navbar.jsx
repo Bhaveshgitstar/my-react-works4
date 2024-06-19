@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaRegUserCircle } from "react-icons/fa";
 const Navbar = () => {
   return (
@@ -7,17 +8,22 @@ const Navbar = () => {
         <i className="bx bx-sun" id="darkLight"></i>
       </div>
 
-      <div className="contact-us-container">
+      {/* <div className="contact-us-container">
         Welcome<h4 id="username">User Name</h4>
-      </div>
+      </div> */}
       <span className="user-info-button">
         <FaRegUserCircle
           className="IconUserInfo"
           style={{
             height: "30",
             width: "30px",
-            position: "relative",
-            right: "8vw",
+          }}
+        />
+        <span className="user_info_username">User Name</span>
+        <RiArrowDropDownLine
+          style={{
+            height: "30",
+            width: "30px",
           }}
         />
       </span>

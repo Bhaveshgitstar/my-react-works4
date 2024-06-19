@@ -267,43 +267,22 @@ body.dark {
     width: 4rem;
   }
   .sidebar {
-    background-color: var(--white-color);
-    background: linear-gradient(
-      112.1deg,
-      rgb(32, 38, 57) 11.4%,
-      rgb(63, 76, 119) 70.2%
-    );
-    background: radial-gradient(
-      circle at 10% 20%,
-      rgb(0, 102, 161) 0%,
-      rgb(0, 68, 108) 90.1%
-    );
-    background: linear-gradient(
-      to top,
-      rgb(32, 38, 57) 11.4%,
-      rgb(63, 76, 119) 70.2%
-    );
-    width: 10rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding: 4rem 2rem;
-    z-index: 100;
-    overflow-y: scroll;
-    box-shadow: 0 0 1px var(--grey-color-light);
-    transition: all 0.5s ease;
+    width: 12rem;
   }
   .bottom_content {
-    position: fixed;
     top: 94%;
-    left: 0;
-    width: 10rem;
-    cursor: pointer;
-    transition: all 0.5s ease;
+    width: 12rem;
   }
 
   .bottom span {
     font-size: small;
+  }
+  .navlink_icon {
+    position: relative;
+    font-size: 15pt;
+  }
+
+  .navlink_icon:hover {
+    background: var(--blue-color);
   }
 }

@@ -15,7 +15,6 @@ const SearchOption = () => {
       clearTimeout(timerId);
     };
   }, [search]);
-
   return (
     <form role="search">
       <input

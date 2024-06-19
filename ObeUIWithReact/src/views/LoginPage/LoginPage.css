@@ -1,0 +1,409 @@
+.left-container {
+  background: linear-gradient(to top, #a3b5df, #f5faff);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  padding: 1vw;
+  max-width: 47%;
+  width: 50%;
+  padding: 0vw;
+  margin: 4rem 1%;
+}
+
+@keyframes headingAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+  0% {
+    transform: translateY(-40px);
+  }
+}
+.upward-heading {
+  animation: headingAnimation 2s ease infinite alternate;
+}
+h1 {
+  margin-top: 0;
+}
+p {
+  margin: 10px 0;
+}
+.form-group {
+  margin: 10px 0;
+}
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#h2 {
+  overflow: hidden; /* or overflow: auto; */
+  white-space: nowrap;
+  text-align: center;
+  margin: 0vw 0;
+  font-size: 1.2vw;
+}
+.contact-us-container {
+  display: inline;
+  color: #333;
+  text-align: center;
+  padding: 0vw 0;
+}
+/* New container styles */
+.about-container {
+  position: absolute; /* Adjust as needed */
+  left: 2.5vw;
+  top: 75vh;
+  right: 0vw;
+  width: 50vw;
+  align-items: center;
+  /* background-color:white;*/
+  max-width: 40vw;
+  /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);*/
+  color: #333;
+  padding: 0vw;
+  text-align: center;
+}
+/*body {
+  
+}*/
+#aboutus {
+  cursor: pointer;
+  padding: 0.8vw 1.5vw;
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  color: #fff;
+  text-decoration: none; /* Remove underlines from links */
+  border-radius: 0vw;
+  font-size: 1vw;
+  position: relative;
+  left: 68vw;
+}
+
+/* Style the home button on hover */
+.home-button:hover {
+  background-color: #f05a15; /* Slightly darker blue on hover */
+}
+
+/* Define the animation keyframes */
+@keyframes moveContactUs {
+  0% {
+    transform: translateX(-5vw);
+  }
+  0% {
+    transform: translateX(
+      -5vw
+    ); /* Adjust the distance and direction of movement */
+  }
+  100% {
+    transform: translateX(-45vw);
+  }
+}
+
+.contact-us-container {
+  transform: scale(1);
+  text-decoration: #1593e7;
+  animation: moveContactUs 3s linear infinite;
+  text-align: center; /* Center the "Contact Us" text horizontally */
+  margin-top: 92vh; /* Add some margin between the form and the text */
+  width: 20vw;
+}
+/* Define styles for the left and right containers */
+\ .right-container {
+  transform: scale(1);
+  width: 50vw;
+  height: 95vh;
+  padding: 0;
+  top: 10vh;
+  display: inline-flex;
+}
+
+/* Clear the floats to prevent layout issues */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Animation for the heading in the left container */
+@keyframes headingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30vh);
+  }
+}
+
+/* Style for the heading animation */
+.upward-heading {
+  transform: scale(1);
+  animation: headingAnimation 1s ease-in-out infinite alternate;
+}
+
+/* Additional styles can be placed here */
+
+/* Center the admin login form */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f5f5f5; /* Light gray or any color of your choice */
+}
+
+.container {
+  transform: scale(0.9);
+  background-color: #f5f5f5; /* Light gray or any color of your choice */
+}
+
+/* Style the navigation strip */
+.navigation-strip {
+  background: linear-gradient(
+    to right,
+    #614385,
+    #516395
+  ); /* Professional dark blue color */
+  color: #fff;
+  padding: 0vw;
+  /*justify-content: space-between;*/
+  /*align-items: center;*/
+  position: fixed;
+  top: 0vw;
+  left: 0vw;
+  right: 0vw;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.navigation-strip2 {
+  background: linear-gradient(to right, #614385, #516395);
+  color: #fff;
+  padding: 0vw;
+  text-align: center;
+  position: fixed;
+  bottom: 0vw;
+  left: 0vw;
+  right: 0vw;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 1.55vw;
+}
+/* Style headings */
+#h2 {
+  text-align: center;
+  color: #fff;
+  padding: 1vh;
+  background: linear-gradient(to right, #2e3192, #1bffff);
+}
+
+/* Center the content */
+.text-center {
+  text-align: center;
+}
+
+form {
+  margin-left: 2vw;
+  margin-top: 12vh;
+  padding: 1vw 10vw 1vw 10vw;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  max-width: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+  max-width: 450px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+} */
+form button[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form-group.text-center {
+  text-align: center;
+}
+
+/* Style the button */
+.form-group.text-center button[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #002855;
+}
+
+form button[type="submit2"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form-group.text-center {
+  text-align: center;
+}
+
+/* Style the button */
+.form-group.text-center button[type="submit2"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button[type="submit2"]:hover {
+  background-color: #002855;
+}
+form .form-group {
+  margin-bottom: 15px;
+}
+
+/*<style>*/
+/* Basic styling */
+#radiobutton {
+  cursor: pointer;
+  padding: 1.1vw;
+  width: 7vw;
+  border: 0.1vw solid #ccc;
+  margin-right: 7.5%;
+  display: block;
+  font-size: 1.055vw;
+}
+
+#about {
+  cursor: pointer;
+  padding: 2vh 2vh 2vh 2vh;
+  width: 8vw;
+  height: 3vw;
+  border: 1px solid #ccc;
+  margin: 5% 5% 5% 5%;
+  display: block;
+  margin-left: 1vw;
+  background: linear-gradient(to right, #614385, #516395);
+  color: #f5f5f5;
+  font-size: 1.05vw;
+}
+
+#aboutgap {
+  cursor: pointer;
+  padding: 2vh 2vh 2vh 2vh;
+  width: 1.25vw;
+  height: 8vh;
+  margin: 5% 5% 5% 5%;
+  display: block;
+}
+
+#about:hover {
+  background-color: #1c26ae;
+  border: 1px solid #ccc;
+}
+
+#radiobutton:hover {
+  background: linear-gradient(to left, #93a5cf, #e4efe9);
+  border: 1px solid #ccc;
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+  display: none;
+}
+
+/* Styling when the radio button is checked */
+input[type="radio"]:checked + #radiobutton {
+  background: linear-gradient(to left, #a1c4fd, #c2e9fb);
+  border-color: #596bab;
+}
+
+/* Icon and text styling */
+.fa {
+  align-self: center;
+}
+
+.about-info {
+  display: none;
+  position: absolute;
+  background-color: #a5d1e6;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+}
+
+#about:hover + .about-info {
+  display: block;
+  font-size: 1.005vw;
+}
+
+#aboutus:hover + .about-info {
+  display: block;
+  font-size: 1.005vw;
+}
+
+#banner {
+  padding: 0.9vw;
+  animation: headingAnimation 3s ease-in-out infinite alternate;
+  animation-delay: 1s; /* Add a delay of 1 second */
+  border-bottom: 0.215vw dashed #2179b3; /* Add border to the bottom only */
+  font-family: "Calibri", sans-serif;
+  text-decoration: bold;
+  color: #333;
+  font-size: 1.005vw;
+  animation-iteration-count: 7;
+  overflow: hidden; /* Hide any overflowing text */ /* Show an ellipsis (...) if the text overflows */
+}
+
+.navigation-strip2 {
+  font-size: 1vw;
+}

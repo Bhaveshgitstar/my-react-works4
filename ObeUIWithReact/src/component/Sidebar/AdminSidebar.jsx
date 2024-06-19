@@ -1,8 +1,9 @@
 import { useState } from "react";
 import styles from "../Sidebar/Sidebar.module.css";
-
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
   return (
     <nav
       className={`${styles.sidebar} ${isSideBarOpen ? "" : styles.close}`}
@@ -11,6 +12,7 @@ const Sidebar = () => {
       }}
       onMouseLeave={() => {
         setIsSideBarOpen(false);
+        setIsSubmenuOpen(false);
       }}
     >
       <div className={styles.menu_content}>
@@ -20,18 +22,21 @@ const Sidebar = () => {
           ></div>
 
           <li className={styles.item}>
-            <a href="/adminhome" className={styles.nav_link}>
+            <Link to="/home" className={styles.nav_link}>
               <span className={styles.navlink_icon}>
                 <i className="bx bx-home-alt"></i>
               </span>
               <span className={styles.navlink}>Home</span>
-            </a>
+            </Link>
           </li>
 
           <li className={styles.item}>
             <div
               href="#"
               className={`${styles.nav_link} ${styles.submenu_item}`}
+              onClick={() => {
+                setIsSubmenuOpen(!isSubmenuOpen);
+              }}
             >
               <span className={styles.navlink_icon}>
                 <i className="bx bx-user"></i>
@@ -40,7 +45,11 @@ const Sidebar = () => {
               <i className="bx bx-chevron-right arrow-left"></i>
             </div>
 
-            <ul className={`${styles.menu_items} ${styles.submenu}`}>
+            <ul
+              className={`${styles.menu_items} ${
+                isSubmenuOpen ? styles.show_submenu : styles.submenu
+              } `}
+            >
               <a
                 href="/coursemapping"
                 className={`${styles.nav_link} ${styles.sublink}`}

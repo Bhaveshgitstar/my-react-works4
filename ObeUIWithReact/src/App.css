@@ -118,10 +118,12 @@
 /* Style the user info button */
 .user-info-button {
   cursor: pointer;
-  text-decoration: underline;
   color: #fff;
-  height: 5px;
-  width: 5px;
+  right: 4rem;
+}
+
+.user_info_username {
+  margin-left: 0.25rem;
 }
 
 /* Show the user info popup on button hover */
@@ -389,5 +391,9 @@ form .form-group {
   }
   .footer-container {
     margin-top: 100vh;
+  }
+
+  .user_info_username {
+    display: none;
   }
 }

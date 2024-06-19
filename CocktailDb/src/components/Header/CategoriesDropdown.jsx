@@ -31,5 +31,4 @@ const CategoriesDropdown = () => {
     </>
   );
 };
-
 export default CategoriesDropdown;
