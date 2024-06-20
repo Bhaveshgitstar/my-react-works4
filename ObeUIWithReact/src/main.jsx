@@ -4,19 +4,31 @@ import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import LoginPage from "./views/LoginPage/LoginPage.jsx";
 import RegisterPage from "./views/RegisterPage/Register.jsx";
+import Sidebar from "./component/Sidebar/AdminSidebar.jsx";
+import Admin from "./views/Admin/Admin.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/admin",
     element: <App />,
     children: [
-      { path: "/", element: <App /> },
-      { path: "/home", element: <App /> },
+      {
+        path: "/admin",
+        element: <Admin />,
+        children: [{ path: "/admin/coursemapping", element: <Admin /> }],
+      },
     ],
   },
+
   {
-    path: "/login",
+    path: "/",
     element: <LoginPage />,
+    children: [
+      {
+        path: "/login",
+        element: <LoginPage />,
+      },
+    ],
   },
   {
     path: "/register",

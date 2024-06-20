@@ -1,127 +1,135 @@
 import "./LoginPage.css";
+import { RiAdminFill } from "react-icons/ri";
+import { FaUserShield } from "react-icons/fa";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const LoginPage = () => {
   return (
     <>
-      <div class="navigation-strip">
-        <h2>
-          &nbsp;&nbsp;OBE Documentation Platform
-          <a id="aboutus" class="home-button">
-            About us
-          </a>
-          <div class="about-info">Contact us:</div>
-        </h2>
+      <div className="navigation-strip">
+        <span>OBE Documentation Platform</span>
+        <span id="aboutus">About us</span>
+        <span className="about-info">Contact us:</span>
       </div>
 
       <div className="row row-cols-1 row-cols-md-2 g-2 card-component">
         <div className="col desktop">
-          <div class="row row-cols-1 row-cols-md-2 g-2 card-component">
+          <div className="row row-cols-1 row-cols-md-2 g-2 card-component">
             <div className="left-container col">
               <h3 id="h2">Latest News</h3>
-              <li type="none" id="banner">
-                "This is to noted that a new app is going to be available soon
-                to make your life more easier"
-              </li>
-              <li type="none" id="banner">
-                "This is to noted that a new app is going to be available soon
-                to make your life more easier"
-              </li>
+              <div class="banner_overflow">
+                <li type="none" id="banner">
+                  "This is to noted that a new app is going to be available soon
+                  to make your life more easier"
+                </li>
+                <li type="none" id="banner">
+                  "This is to noted that a new app is going to be available soon
+                  to make your life more easier"
+                </li>
+              </div>
             </div>
 
-            <div class="left-container col">
+            <div className="left-container col">
               <h3 id="h2">Latest Circulars</h3>
-              <li type="none" id="banner">
-                "Attainment correct info"
-              </li>
-              <li type="none" id="banner">
-                "This is to noted that a new app is going to be available soon
-                to make your life more easier"
-              </li>
+              <div class="banner_overflow">
+                <li type="none" id="banner">
+                  "Attainment correct info"
+                </li>
+                <li type="none" id="banner">
+                  "This is to noted that a new app is going to be available soon
+                  to make your life more easier"
+                </li>
+              </div>
             </div>
           </div>
 
-          <div class="about-container col">
+          <div className="about-container col">
             <table>
-              <tr>
-                <td>
-                  <p id="aboutgap"></p>
-                </td>
-                <td>
-                  <p id="about">About Admin</p>
-                  <div class="about-info">
-                    Additional information about Admin
-                  </div>
-                </td>
+              <tbody>
+                <tr>
+                  <td>
+                    <p id="aboutgap"></p>
+                  </td>
+                  <td>
+                    <p id="about">About Admin</p>
+                    <div className="about-info">
+                      Additional information about Admin
+                    </div>
+                  </td>
 
-                <td>
-                  <p id="about">About Teacher</p>
-                  <div class="about-info">
-                    Additional information about Coordinator
-                  </div>
-                </td>
-                <td>
-                  <p id="about">About Coordinator</p>
-                  <div class="about-info">
-                    Additional information about Teacher
-                  </div>
-                </td>
-                <td>
-                  <p id="aboutgap"></p>
-                </td>
-              </tr>
+                  <td>
+                    <p id="about">About Teacher</p>
+                    <div className="about-info">
+                      Additional information about Coordinator
+                    </div>
+                  </td>
+                  <td>
+                    <p id="about">About Coordinator</p>
+                    <div className="about-info">
+                      Additional information about Teacher
+                    </div>
+                  </td>
+                  <td>
+                    <p id="aboutgap"></p>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
 
-        <div class="col">
+        <div className="col">
           <form action="/loginextra" method="POST">
-            <div class="form-group ">
+            <div className="form-group ">
               <table>
-                <tr>
-                  <td>
-                    <input
-                      id="admin"
-                      type="radio"
-                      name="role"
-                      value="admin"
-                      required
-                    />
-                    <label id="radiobutton" for="admin">
-                      <i class="fa fa-user-shield"></i>
-                      <p>Admin</p>
-                    </label>
-                  </td>
-                  <td>
-                    <input
-                      id="coordinator"
-                      type="radio"
-                      name="role"
-                      value="coordinator"
-                      checked="checked"
-                      required
-                    />
-                    <label id="radiobutton" for="coordinator">
-                      <i class="fa fa-user-tie"></i>
-                      <p>Coordinator</p>
-                    </label>
-                  </td>
-                  <td>
-                    <input
-                      id="teacher"
-                      type="radio"
-                      name="role"
-                      value="teacher"
-                      required
-                    />
-                    <label id="radiobutton" for="teacher">
-                      <i class="fa fa-chalkboard-teacher"></i>
-                      <p>Teacher</p>
-                    </label>
-                  </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input
+                        id="admin"
+                        type="radio"
+                        name="role"
+                        value="admin"
+                        required
+                      />
+                      <label id="radiobutton" htmlFor="admin">
+                        <RiAdminFill />
+                        <p>Admin</p>
+                      </label>
+                    </td>
+                    <td>
+                      <input
+                        id="coordinator"
+                        type="radio"
+                        name="role"
+                        value="coordinator"
+                        checked="checked"
+                        required
+                      />
+                      <label id="radiobutton" htmlFor="coordinator">
+                        <FaUserShield />
+                        <p>Coordinator</p>
+                      </label>
+                    </td>
+                    <td>
+                      <input
+                        id="teacher"
+                        type="radio"
+                        name="role"
+                        value="teacher"
+                        required
+                      />
+                      <label id="radiobutton" htmlFor="teacher">
+                        <FaChalkboardTeacher />
+                        <p>Teacher</p>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
-            <div class="form-group">
-              <label for="username">Username</label>
+            <div className="form-group">
+              <label htmlFor="username">Username</label>
               <input
                 type="text"
                 id="username"
@@ -130,8 +138,8 @@ const LoginPage = () => {
                 required
               />
             </div>
-            <div class="form-group">
-              <label for="password">Password</label>
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
               <input
                 type="password"
                 id="password"
@@ -141,11 +149,11 @@ const LoginPage = () => {
               />
             </div>
 
-            <div class="form-group">
+            <div className="form-group">
               <img id="captchaImg" src="/captcha" alt="CAPTCHA" />
               <i
                 id="refreshCaptcha"
-                class="fa fa-sync-alt"
+                className="fa fa-sync-alt"
                 style={{ cursor: "pointer" }}
               ></i>
               <br></br>
@@ -158,7 +166,7 @@ const LoginPage = () => {
               />
             </div>
 
-            <div class="form-group text-center">
+            <div className="form-group text-center">
               <button
                 type="submit"
                 style={{
@@ -167,86 +175,95 @@ const LoginPage = () => {
               >
                 Login
               </button>
-              <button
-                onclick="run()"
-                type="submit2"
-                style={{
-                  background: "linear-gradient(to bottom, #764BA2, #667EEA)",
-                }}
-              >
-                Register
-              </button>
+              <Link to="/register">
+                <button
+                  type="submit2"
+                  style={{
+                    background: "linear-gradient(to bottom, #764BA2, #667EEA)",
+                  }}
+                >
+                  Register
+                </button>
+              </Link>
             </div>
-            <div class="form-group text-center">
-              <a href="/forgot-password" class="/forgot-password">
+            <div className="form-group text-center">
+              <Link to="/forgot-password" className="/forgot-password">
                 Forgot Password?
-              </a>{" "}
+              </Link>
               &nbsp;
             </div>
           </form>
         </div>
       </div>
       <div className="col mobile">
-        <div class="row row-cols-1 row-cols-md-2 g-2 card-component">
+        <div className="row row-cols-1 row-cols-md-2 g-2 card-component">
           <div className="left-container col">
             <h3 id="h2">Latest News</h3>
-            <li type="none" id="banner">
-              "This is to noted that a new app is going to be available soon to
-              make your life more easier"
-            </li>
-            <li type="none" id="banner">
-              "This is to noted that a new app is going to be available soon to
-              make your life more easier"
-            </li>
+            <div class="banner_overflow">
+              <li type="none" id="banner">
+                "This is to noted that a new app is going to be available soon
+                to make your life more easier"
+              </li>
+              <li type="none" id="banner">
+                "This is to noted that a new app is going to be available soon
+                to make your life more easier"
+              </li>
+            </div>
           </div>
 
-          <div class="left-container col">
+          <div className="left-container col">
             <h3 id="h2">Latest Circulars</h3>
-            <li type="none" id="banner">
-              "Attainment correct info"
-            </li>
-            <li type="none" id="banner">
-              "This is to noted that a new app is going to be available soon to
-              make your life more easier"
-            </li>
+            <div class="banner_overflow">
+              <li type="none" id="banner">
+                "Attainment correct info"
+              </li>
+              <li type="none" id="banner">
+                "This is to noted that a new app is going to be available soon
+                to make your life more easier"
+              </li>
+            </div>
           </div>
         </div>
 
-        <div class="about-container col">
+        <div className="about-container col">
           <table>
-            <tr>
-              <td>
-                <p id="aboutgap"></p>
-              </td>
-              <td>
-                <p id="about">About Admin</p>
-                <div class="about-info">Additional information about Admin</div>
-              </td>
+            <tbody>
+              <tr>
+                <td>
+                  <p id="aboutgap"></p>
+                </td>
+                <td>
+                  <p id="about">About Admin</p>
+                  <div className="about-info">
+                    Additional information about Admin
+                  </div>
+                </td>
 
-              <td>
-                <p id="about">About Teacher</p>
-                <div class="about-info">
-                  Additional information about Coordinator
-                </div>
-              </td>
-              <td>
-                <p id="about">About Coordinator</p>
-                <div class="about-info">
-                  Additional information about Teacher
-                </div>
-              </td>
-              <td>
-                <p id="aboutgap"></p>
-              </td>
-            </tr>
+                <td>
+                  <p id="about">About Teacher</p>
+                  <div className="about-info">
+                    Additional information about Coordinator
+                  </div>
+                </td>
+                <td>
+                  <p id="about">About Coordinator</p>
+                  <div className="about-info">
+                    Additional information about Teacher
+                  </div>
+                </td>
+                <td>
+                  <p id="aboutgap"></p>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
-      <div class="contact-us-container">
+      <div className="contact-us-container">
         <div id="contact-us-line">Contact Us</div>
       </div>
 
-      <div class="navigation-strip2">
+      <div className="navigation-strip2">
         <p> Contact Detail:+91 5959595959</p>
       </div>
     </>

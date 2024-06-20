@@ -1,0 +1,19 @@
+Stumble client 
+
+Index.js
+Contents:
+           contexts-(in order of hierarchy):--	1.Sound	Context
+					                                      2.Toast Context
+					                                      3.Socket Context
+					                                      4.User Context
+					                                      5.Chat Context
+
+           Then---                              6.App
+
+(App.js)
+Which Includes  1.Navbar()(hidden on specific routes)
+		            2.Views(routes)				 
+
+
+
+

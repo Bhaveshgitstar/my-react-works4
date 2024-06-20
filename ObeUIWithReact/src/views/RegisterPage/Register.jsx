@@ -1,7 +1,12 @@
+import { Link } from "react-router-dom";
 const RegisterPage = () => {
   return (
-    <form action="/register" method="POST">
-      <h2 class="box-heading">Register</h2>
+    <form
+      action="/register"
+      method="POST"
+      style={{ width: "80vw", padding: "7vw" }}
+    >
+      <div style={{ textAlign: "center" }}>Register</div>
       <div class="form-group">
         <div class="input-group">
           <span class="input-group-icon">
@@ -49,13 +54,8 @@ const RegisterPage = () => {
         </div>
       </div>
       <div class="col-md-12 d-flex mb-3">
-        <div class="col-md-3">
-          <select
-            class="form-select"
-            name="role"
-            id="academicYearDropdown"
-            style={{ width: "27vw" }}
-          >
+        <div class="col-md-3" style={{ minWidth: "100%" }}>
+          <select class="form-select" name="role" id="academicYearDropdown">
             <option value="" disabled selected>
               Select Your Role
             </option>
@@ -72,13 +72,8 @@ const RegisterPage = () => {
         </div>
       </div>
       <div class="col-md-12 d-flex mb-3">
-        <div class="col-md-3">
-          <select
-            class="form-select"
-            name="Department"
-            id="departmentDropdown"
-            style={{ width: "27vw" }}
-          >
+        <div class="col-md-3" style={{ minWidth: "100%" }}>
+          <select class="form-select" name="Department" id="departmentDropdown">
             <option value="" disabled selected>
               Select Your Department
             </option>
@@ -99,10 +94,12 @@ const RegisterPage = () => {
       </div>
 
       <div class="form-group text-center">
-        <button onclick="run()" type="submit2">
-          Back
-        </button>
-        <button type="submit">Register</button>
+        <Link to="/login">
+          <button type="submit2">Back</button>
+        </Link>
+        <Link to="/register">
+          <button type="submit">Register</button>
+        </Link>
       </div>
     </form>
   );

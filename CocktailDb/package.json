@@ -1,7 +1,7 @@
 {
   "name": "cocktaildb",
   "private": true,
-  "version": "0.0.0mongodb+srv://bhasha12:cLU4rWC63vJIWt3o@obedoc.yjscp0h.mongodb.net/",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port 3000",

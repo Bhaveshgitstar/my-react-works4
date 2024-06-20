@@ -4,12 +4,13 @@ import Sidebar from "./component/Sidebar/AdminSidebar";
 import "boxicons/css/boxicons.min.css";
 import Navbar from "./component/Header/Navbar";
 import Footer from "./component/Footer/Footer";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Sidebar></Sidebar>
       <Navbar></Navbar>
+      <Outlet></Outlet>
       <Footer></Footer>
     </>
   );
