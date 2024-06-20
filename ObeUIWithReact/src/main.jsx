@@ -6,6 +6,7 @@ import LoginPage from "./views/LoginPage/LoginPage.jsx";
 import RegisterPage from "./views/RegisterPage/Register.jsx";
 import Sidebar from "./component/Sidebar/AdminSidebar.jsx";
 import Admin from "./views/Admin/Admin.jsx";
+import Course from "./views/Admin/Mapping/Course.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <Admin />,
-        children: [{ path: "/admin/coursemapping", element: <Admin /> }],
+        children: [
+          { path: "/admin/home", element: <></> },
+          { path: "/admin/mapping/course", element: <Course /> },
+        ],
       },
     ],
   },

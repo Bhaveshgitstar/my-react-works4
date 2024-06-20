@@ -175,12 +175,13 @@ body.dark {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 4px 15px;
+  padding: 4px 20px;
   border-radius: 8px;
   text-decoration: none;
   color: var(--grey-color);
   white-space: nowrap;
 }
+
 .sidebar.close .navlink {
   display: none;
 }

@@ -22,7 +22,7 @@ const Sidebar = () => {
           ></div>
 
           <li className={styles.item}>
-            <Link to="/home" className={styles.nav_link}>
+            <Link to="/admin/home" className={styles.nav_link}>
               <span className={styles.navlink_icon}>
                 <i className="bx bx-home-alt"></i>
               </span>
@@ -51,7 +51,7 @@ const Sidebar = () => {
               } `}
             >
               <a
-                href="/coursemapping"
+                href="/admin/mapping/course"
                 className={`${styles.nav_link} ${styles.sublink}`}
               >
                 Course Mapping
