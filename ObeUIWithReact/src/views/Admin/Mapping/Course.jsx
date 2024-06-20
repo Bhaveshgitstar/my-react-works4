@@ -3,7 +3,7 @@ const Course = () => {
     <>
       <div class="container mt-5"></div>
       <center>
-        <div class="box-heading1" style={{ marginLeft: "4rem" }}>
+        <div class="box-heading1" style={{ marginLeft: "7rem" }}>
           <h5>REGISTER NEW COURSE</h5>
         </div>
       </center>

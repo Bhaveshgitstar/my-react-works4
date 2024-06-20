@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import LoginPage from "./views/LoginPage/LoginPage.jsx";
 import RegisterPage from "./views/RegisterPage/Register.jsx";
-import Sidebar from "./component/Sidebar/AdminSidebar.jsx";
+import Sidebar from "./component/Sidebar/Sidebar.jsx";
 import Admin from "./views/Admin/Admin.jsx";
 import Course from "./views/Admin/Mapping/Course.jsx";
 
