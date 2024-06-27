@@ -1,3 +1,5 @@
-const Teacher = () => {};
+const Teacher = () => {
+  
+};
 
 export default Teacher;

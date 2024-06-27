@@ -11,3 +11,16 @@ console.log(array_1.find(startsWithA));
 function startsWithA(elt) {
   return elt.startsWith("a");
 }
+
+let array = 0;
+var array3 = 1;
+array = "hello";
+array3 = "hello";
+// const array2;
+
+console.log(array);
+console.log(array3);
+
+var array3 = [5, 2, 3, 4, 5];
+
+console.log(array3.reverse(array3.sort()));
