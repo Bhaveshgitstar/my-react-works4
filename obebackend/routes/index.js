@@ -9,7 +9,7 @@ router.get("^/$|/index(.html)?", (req, res) => {
 router.get("/set-session", (req, res) => {
   req.session.user = {
     uuid: "12234-2345-2323423",
-  }; //THIS SETS AN OBJECT - 'USER'
+  };
   req.session.save((err) => {
     if (err) {
       console.log(err);
